@@ -9,7 +9,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to right, transparent, darkgray);
+    background-image: linear-gradient(to right, lightgray, rgb(75, 75, 75));
     overflow-x: hidden;
 }
 
@@ -19,7 +19,7 @@ header {
     background-image: url(imagens/comp-img.webp);
     background-repeat: no-repeat;
     background-size: 103% 100%; 
-    max-width: 1000px;
+   
     margin: auto;
 
 }
@@ -53,16 +53,42 @@ a:hover {
     padding: 12px;
 }
 
-#container {
-    position: relative;
-    height: 400px;
+main > #container {
     display: block;
     margin: auto;
+    max-width: 900px;
 }
 
-#filho {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
+.imagem {
+    float: left;
+    width: 41%;
+    height: 300px;
+    margin: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.597);
+}
+
+#foto {
+    background-image: url(imagens/alunos.jfif);
+    background-size: cover;
+    background-attachment: 100%, 100%;
+    background-position: center center;
+}
+
+#texto {
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.66);
+}
+
+#texto h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+}
+
+#texto p {
+    padding: 15px;
+    text-indent: 10px;
+}
+
