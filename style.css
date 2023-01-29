@@ -157,3 +157,7 @@ footer {
     font-weight: bolder;
     font-size: 1.2em;
 }
+
+#menu {
+    display: none;
+}
